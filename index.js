@@ -106,5 +106,5 @@ exports.parse = function(bem) {
         result = '{ shouldDeps: ' + resultDeps + ' }';
     });
 
-    return { result: result, deps: resultDeps };
+    return { result: result, resultDeps: resultDeps };
 };
