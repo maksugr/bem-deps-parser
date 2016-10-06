@@ -1,12 +1,16 @@
 {
   "name": "bem-deps-parser",
   "version": "1.0.0",
-  "description": "",
+  "description": "Fork of bem-deps-parser by Vladimir Grinenko",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Vladimir Grinenko",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maksugr/bem-deps-parser.git"
+  },
+  "author": "Roman Ponomarev",
   "license": "MIT",
   "dependencies": {
     "esdispatch": "0.0.3",
