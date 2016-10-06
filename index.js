@@ -16,6 +16,7 @@ exports.parse = function(bem) {
 
     var shouldDeps = [];
     var result;
+    var resultDeps;
 
     function generateMods(ast) {
         var mods = {};
@@ -101,8 +102,9 @@ exports.parse = function(bem) {
     }
 
     dispatcher.observe(ast, function() {
-        result = '{ shouldDeps: ' + util.inspect(normalizeDeps(shouldDeps), { depth: null }) + ' }';
+        resultDeps = util.inspect(normalizeDeps(shouldDeps), { depth: null });
+        result = '{ shouldDeps: ' + resultDeps + ' }';
     });
 
-    return result;
+    return { result: result, deps: resultDeps };
 };

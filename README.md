@@ -23,3 +23,6 @@ const sourceCode = "block('bla').content()(function() { return [{ block: 'b1', e
 const deps = depsParser.parse(sourceCode);
 ```
 
+Variable `deps` will hold object with fields:
+* `result` {String} - result deps wrapped in 'shouldDeps'
+* `resultDeps` {String} - result deps
